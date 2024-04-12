@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragmentInicio">
+
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="daniel.brizuela.menuactividad.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragmentNotas"
+        android:name="daniel.brizuela.menuactividad.ui.gallery.GalleryFragment"
+        android:label="Notas"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/fragmentInformacion"
+        android:name="daniel.brizuela.menuactividad.ui.slideshow.SlideshowFragment"
+        android:label="Informacion"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/fragmentCodigos"
+        android:name="daniel.brizuela.menuactividad.FragmentCodigos"
+        android:label="codigos"
+        tools:layout="@layout/fragment_codigos" />
+    <fragment
+        android:id="@+id/fragmentPerfil"
+        android:name="daniel.brizuela.menuactividad.FragmentPerfil"
+        android:label="perfil"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>
